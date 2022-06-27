@@ -5,21 +5,21 @@ from .models import Post
 # Register your models here.
 
 
-class PostAdmin(admin.PostAdmin):
+# class PostAdmin(admin.PostAdmin):
 
-    class Meta:
-        model = Post
+#     class Meta:
+#         model = Post
 
-        fields = [
-            'title',
-            'slug',
-            'author',
-            'body',
-            'publish',
-            'created',
-            'updated',
-            'status',
-        ]
+#         fields = [
+#             'title',
+#             'slug',
+#             'author',
+#             'body',
+#             'publish',
+#             'created',
+#             'updated',
+#             'status',
+#         ]
 
 
-admin.site.register(Post, PostAdmin)
+admin.site.register(Post)
